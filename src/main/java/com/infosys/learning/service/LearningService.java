@@ -33,10 +33,10 @@ public class LearningService {
     public static String getNameV3(String name){
         String fullname = "Not Identifier";
 
-        if ("john".equals(name)){
+        if ("John".equals(name)){
             fullname = "John Doe";
         }else if("Jane".equals(name)){
-            fullname = "jenny Jane";
+            fullname = "Jenny Jane";
         }
 
         return fullname;

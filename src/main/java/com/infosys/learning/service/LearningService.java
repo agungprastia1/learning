@@ -3,8 +3,13 @@ package com.infosys.learning.service;
 import com.infosys.learning.dot.Person;
 import org.springframework.stereotype.Service;
 
+import java.util.Calendar;
+
+
 @Service
 public class LearningService {
+
+
 
     public String getName(String gender){
         Person person = new Person();
@@ -41,4 +46,9 @@ public class LearningService {
 
         return fullname;
     }
+
+public Person getData(Person person){
+        person.getData();
+        return  person;
+}
 }

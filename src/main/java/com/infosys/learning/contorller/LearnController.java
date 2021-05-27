@@ -26,7 +26,12 @@ public class LearnController {
 
     @PostMapping(value = "/getpersonnamev3", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE )
     public String getPersonNameV3(@RequestBody(required = true) Person person){
-        return LearningService.getNameV3(person.getName());
+        return learningService.getNameV3(person.getName());
+    }
+
+    @PostMapping(value = "/getperson",consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public Person getPerson(@RequestBody(required = true) Person person ){
+        return  learningService.getData(person);
     }
 
 }
